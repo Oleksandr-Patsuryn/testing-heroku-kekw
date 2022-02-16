@@ -12,6 +12,6 @@ export class CarsService {
   constructor(private http: HttpClient) {}
 
   getCars(){
-    return this.http.get<Cars>('http://localhost:3000/cars');
+    return this.http.get<Cars>('https://testing-heroku-kekw.herokuapp.com/cars');
   }
 }
