@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "concurrently \"ng build --prod\" \"json-server db.json --watch\""
+    "heroku-postbuild": "ng build --prod",
+    "heroku-cleanup": "json-server db.json"
   },
   "private": true,
   "dependencies": {
