@@ -17,4 +17,10 @@ export class AppComponent {
       }
     )
   }
+  loadCars2() {
+    this.carsService.getCars2().subscribe((cars) => {
+        console.log(cars);
+      }
+    )
+  }
 }
