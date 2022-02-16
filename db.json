@@ -1,19 +1,6 @@
 {
-  "cars": [
-    {
-      "name": "audi",
-      "color": "green",
-      "id": 1
-    },
-    {
-      "name": "car2",
-      "color": "grey",
-      "id": 2
-    },
-    {
-      "name": "car3",
-      "color": "red",
-      "id": 3
-    }
+  "user": [
+  ],
+  "games": [
   ]
 }
