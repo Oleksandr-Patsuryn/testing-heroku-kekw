@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CarsService} from "./cars.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testing-heroku';
+
+  constructor(private carsService: CarsService) {}
+
+  loadCars() {
+    this.carsService.getCars().subscribe((cars) => {
+        console.log(cars);
+      }
+    )
+  }
 }
