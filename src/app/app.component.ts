@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {CarsService} from "./cars.service";
 
 @Component({
@@ -6,7 +6,7 @@ import {CarsService} from "./cars.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'testing-heroku';
 
   constructor(private carsService: CarsService) {}
@@ -23,4 +23,5 @@ export class AppComponent {
       }
     )
   }
+
 }
