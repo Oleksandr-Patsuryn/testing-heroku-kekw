@@ -8,3 +8,11 @@ server.use(middlewares);
 server.use(router);
 
 server.listen(port);
+
+
+setInterval(() => {
+  let request = require("request");
+  let url = "https://testing-heroku-kekw.herokuapp.com" // My heroku app
+  request(url, (error, response, body) => {
+    console.log(body);
+  })}, 300000)
